@@ -1,0 +1,85 @@
+# Old API
+
+##Return data
+
+All commands return JSON with: 
+
+[succes]=true|false
+[error]=string with error if exist
+[data]= arrays with data 
+
+##Tickets params (sending post|get method)
+
+?m=tickets&p=getTicketToKB &id=<TICKETID> 
+?m=tickets&p=moveTicketTo &ticketId=<TICKETID> & moveToId=1|2|3|4 
+?m=tickets&p=getAttachment&id=<ATTACHEMENT_ID>
+?m=tickets&p=changePriority & id=<TICKETID> & priority=
+?m=tickets&p=addEmailToSpam & id=<TICKETID>
+?m=tickets&p=closeTicket &ticketId=<TICKETID>
+?m=tickets&p=getAllMessagesFromTicket & id=<TICKETID>
+
+?m=tickets&p=addMessage & type=internalNote|addResponse|forwardTicket|externalQuestion
+&ticketId=
+&messageText=
+&departmentId= //for response/forward option
+&existAttach= //for response option
+
+?m=tickets&p=getOneTicket &id=<TICKETID>
+?m=tickets&p=getAllTickets //Get todo  tickets
+?m=tickets&p=getAllTickets1  //Get active tickets
+?m=tickets&p=getAllTickets2  //get closed
+?m=tickets&p=getAllTickets3  //get waiting
+?m=tickets&p=getAllTickets4  //get trash
+
+
+
+[DEPRECIATED]
+?m=tickets&p=addMessageTypeForward
+?m=tickets&p=sendQuestionEmail
+?m=tickets&p=addMessageTypeSendQuestion
+?m=tickets&p=saveMoveToExpected &ticketId=<TICKETID>
+?m=tickets&p=saveInProgressTicket &ticketId=<TICKETID>
+?m=tickets&p=saveRubbishBinTicket &ticketId=<TICKETID>
+?m=tickets&p=openTicket &ticketId=<TICKETID>
+
+## New Tickets params
+
+?m=newticket&p=saveTicket
+&ticketTitle=
+&messageText=
+&senderEmail=
+&senderPhone=
+&departmentId=
+&priority=
+&senderName=
+
+
+## Departments 
+
+&m=departments&p=showall
+
+&m=departments&p=adddepartment
+&departmentName=
+&departmentType=
+&departmentSignature=
+&replyEmailId=
+&confirmMessageTxt=
+
+&m=departments&p=editdepartment
+&id=
+&departmentName=
+&departmentType=
+&departmentSignature
+&replyEmailId
+&confirmMessageTxt
+
+&m=departments&p=deldepartment&id
+&m=departments&p=getdepartment&id
+
+
+## EMAIL PARAMS 
+m=emailspam&p=addEmail&email=
+m=emailspam&p=delEmail&id=<EMAILID>
+m=emailspam&p=getEmailById&id
+m=emailspam&p=getAllEmails
+//m=emailspam&p=editEmail

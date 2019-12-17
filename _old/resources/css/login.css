@@ -1,0 +1,125 @@
+
+
+@font-face {
+    font-family: 'SourceSansProLight';
+    src: url('font/eot/SourceSansPro-ExtraLight.eot');
+    src: url('font/woff/otf/SourceSansPro-ExtraLight.otf.woff') format('woff'), url('font/svg/SourceSansPro-ExtraLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+	background: #081021;
+
+}
+
+
+
+
+
+
+
+#modLogin {
+    height: 600px;
+    width: 100%;
+}
+
+#modLoginBox {
+    position: relative;
+    width: 428px;
+    margin: 0 auto 0 auto;
+}
+
+div.loginBoxLabel {
+    display: inline-table;
+    font-size: 11px;
+    padding: 0px;
+    height: 32px;
+    width: 150px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'SourceSansProLight';
+    color: #ffffff;
+    text-align: right;
+    vertical-align: middle;
+}
+
+div.loginBoxForm {
+    display: inline-table;
+    padding: 0px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 240px;
+    height: 32px;
+    background: #ffffff;
+    font-size: 11px;
+    border-top: 1px solid #cbccda;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'SourceSansProLight';
+    font-size: 14px;
+    position: relative;
+    color: #979cb2;
+    font-weight: normal;
+}
+
+div.loginBoxForm>div {
+    padding: 6px;
+    text-align: left;
+    position: relative;
+}
+
+div.loginBoxForm input {
+    margin: 0px;
+    background: transparent;
+    border: 0px;
+    width: 230px;
+    height: 32px;
+    font-size: 14px;
+    color: #979cb2;
+    outline: none;
+    font-family: 'SourceSansProLight';
+    position: absolute;
+    left: 4px;
+    top: 0px;
+}
+
+#modLoginDivButton {
+    margin-top: 20px;
+    
+    width: 428px;
+    height: 60px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+	margin-left: 71px;
+
+
+    vertical-align: middle;
+    height: 44px;
+    width: 320px;
+    background: #d03936;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'SourceSansProLight';
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    cursor: pointer;
+    cursor: hand;
+    border: 0px;
+
+}
+
+#modLoginButton {
+
+}
+
+#modLoginDivButton:hover {
+    background: #2b2c78;
+}
+
